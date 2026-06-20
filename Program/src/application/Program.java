@@ -12,6 +12,7 @@ public class Program {
         int n = sc.nextInt();
         sc.nextLine();
 
+        Funcionarios [] lista = new Funcionarios[n];
         
 
         sc.close();
