@@ -35,5 +35,10 @@ public class Funcionarios {
         this.salario = salario;
     }
 
+
+    public String toString() {
+        return "[id= " + id + ", name= " + name + ", salario= " + salario + "]";
+    }
+
     
 }
