@@ -16,6 +16,18 @@ public class Program {
 
         Funcionarios [] lista = new Funcionarios[n];
         
+        for(int i=0; i<lista.length; i++){
+            System.out.println("Coloque ID");
+            int id = sc.nextInt();
+            sc.nextLine();
+            System.out.println("Coloque nome");
+            String name = sc.nextLine();
+            System.out.println("Coloque salário");
+            double salario = sc.nextDouble();
+            sc.nextLine();
+            Funcionarios  funf = new Funcionarios(id, name, salario);
+        }
+
         
         sc.close();
     }
