@@ -11,6 +11,10 @@ public class Funcionarios {
         this.salario = salario;
     }
 
+    public Funcionarios() {
+        //TODO Auto-generated constructor stub
+    }
+
     public int getId() {
         return id;
     }
@@ -35,6 +39,7 @@ public class Funcionarios {
         this.salario = salario;
     }
 
+   
 
     public String toString() {
         return "[id= " + id + ", name= " + name + ", salario= " + salario + "]";
