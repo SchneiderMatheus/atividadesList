@@ -2,7 +2,7 @@ package entities;
 
 public class Funcionarios {
     private int id;
-    private string name;
+    private String name;
     private double salario;
 
     
