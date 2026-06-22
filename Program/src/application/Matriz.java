@@ -14,7 +14,7 @@ public class Matriz {
         int [][] matriz = new int[linhas][colunas];
 
         for (int i = 0; i < linhas; i++) {
-            for(int j =0; j<colunas; i++){
+            for(int j =0; j<colunas; j++){
                 System.out.println("Digite numeros para: "+i +":"+j);
                 matriz[i][j] = sc.nextInt();
             }
@@ -23,7 +23,7 @@ public class Matriz {
         System.out.println("Escolha um dos valores na matriz: ");
         int x = sc.nextInt();
         for (int i = 0; i < matriz.length; i++) {
-            for(int j =0; j<matriz[i].length; i++){
+            for(int j =0; j<matriz[i].length; j++){
                 if (x == matriz[i][j]) {
                     System.out.println("Posição:"+matriz[i]+matriz[j]);
                     System.out.println("Esquerda::"+matriz[i][j-1]);
