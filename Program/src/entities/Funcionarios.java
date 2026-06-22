@@ -39,7 +39,9 @@ public class Funcionarios {
         this.salario = salario;
     }
 
-   
+   public void increaseSalary(double percentage){
+    this.salario = salario + salario * (percentage /100);
+   }
 
     public String toString() {
         return "[id= " + id + ", name= " + name + ", salario= " + salario + "]";
