@@ -25,24 +25,30 @@ public class Program {
             System.out.println("Coloque salário do Funcionario #"+(i+1));
             double salario = sc.nextDouble();
             sc.nextLine();
-            Funcionarios  funf = new Funcionarios(id, name, salario);
+            lista[i] = new Funcionarios(id, name, salario);
         }
          Funcionarios  funf = new Funcionarios();
         System.out.println("Id do funcionario que receberá o aumento: ");
         int id = sc.nextInt();
+        Funcionarios func = null;
         for(int i=0; i < lista.length; i++){
-            if (id == funf.getId()) {
-                System.out.println("Digite a porcentagem de aumento: ");
+            if (lista[i].getId() == id) {
+                func = lista[i];
+                break;
+            } 
+        }
+        if (func != null) {
+            System.out.println("Digite a porcentagem de aumento: ");
                 double aumento = sc.nextDouble();
                 double novoSalario =  funf.getSalario() *(aumento/100);
                 funf.setSalario(novoSalario);
-            } else 
-            System.out.println("ID Inválido");
-        }
+        } else
+            System.out.println("ID não encontrado!");
+
+    System.out.println("\nLista de Funcionarios: ");
 
         for(int i=0; i < lista.length; i++){
-            System.out.println("Lista da Funcionários: ");
-            System.out.println(funf);
+            System.out.println(lista[i]);
         }
         sc.close();
     }

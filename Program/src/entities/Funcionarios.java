@@ -40,7 +40,7 @@ public class Funcionarios {
     }
 
    public void increaseSalary(double percentage){
-    this.salario = salario + salario * (percentage /100);
+    this.salario +=  salario * (percentage /100);
    }
 
     public String toString() {
