@@ -27,7 +27,7 @@ public class Program {
             sc.nextLine();
             lista[i] = new Funcionarios(id, name, salario);
         }
-         Funcionarios  funf = new Funcionarios();
+        
         System.out.println("Id do funcionario que receberá o aumento: ");
         int id = sc.nextInt();
         Funcionarios func = null;
@@ -39,9 +39,9 @@ public class Program {
         }
         if (func != null) {
             System.out.println("Digite a porcentagem de aumento: ");
-                double aumento = sc.nextDouble();
-                double novoSalario =  funf.getSalario() *(aumento/100);
-                funf.setSalario(novoSalario);
+                double porcentagem = sc.nextDouble();
+                func.increaseSalary(porcentagem);
+                System.out.println("Aplicado o aumento salarial com sucesso!");
         } else
             System.out.println("ID não encontrado!");
 
